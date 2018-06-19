@@ -1,0 +1,43 @@
+﻿p{
+      background-color: blue;  
+      color: white;
+}
+
+
+.superhero {
+    font-family: Euphemia;
+    color: purple;
+
+}
+
+#page-title {
+    color: var(--primary-color); /*We'll get to what this is shortly*/
+    font-family: Aharoni;
+    font-size: 2rem;
+}
+
+section h1 {
+    background-color: red;
+}
+ul li img {
+    height: 25vh; /*Always 15% the height of the viewport*/
+}
+body { /*These can get MUCH more complex btw*/
+    background-image: linear-gradient(rgba(127, 127, 255, 0.75), #ff6);
+}
+
+section {
+    background-image: radial-gradient(circle at center, red, blue);
+    : root
+
+{ /*Notice we declare this with the same key, value pair.*/
+    --primary-color: red;
+    --secondary-color: blue;
+    --tertiary-color: yellow;
+}
+
+h1 { /*Declare variables the same way you would other values.*/
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+

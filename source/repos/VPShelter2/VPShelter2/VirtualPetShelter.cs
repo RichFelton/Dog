@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VPShelter2
 {
-    class virtualPetShelter
+    class VirtualPetShelter
     {
         private string listOfPets;
         private string listOfEmployees;
@@ -16,12 +16,12 @@ namespace VPShelter2
         public string ListOfEmployees { get; set; }
         public List<string> PetList { get; set; }
 
-        public virtualPetShelter() //default constructor
+        public VirtualPetShelter() //default constructor
         {
 
         }
 
-        public virtualPetShelter(string listOfPets, string listOfEmployees)
+        public VirtualPetShelter(string listOfPets, string listOfEmployees)
         {
             ListOfPets = listOfPets;
             ListOfEmployees = listOfEmployees;
@@ -30,7 +30,12 @@ namespace VPShelter2
 
         public List<string> employeeList = new List<string>() { "Courtney", "John", "Mallory", "Michael", "Hope", "Pete" };
 
+        public List<string> columnHeaders = new List<string>() { "Pet Name", "Hunger", "Thirsty", "Needs to go out", "Pet Type", "Food" };
 
+        public override string ToString()
+        {
+            return String.Format("{0, -10} {1, -10} {2, -10} {3, -20}{4, -13} {5, -10} \n", this.columnHeaders);
+        }
 
     }
 }

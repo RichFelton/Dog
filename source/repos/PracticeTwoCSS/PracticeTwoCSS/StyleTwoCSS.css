@@ -1,0 +1,42 @@
+﻿.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 50px);
+    grid-gap: 10px 10px;
+    text-align: center;
+    color: white;
+    grid-auto-flow: row;
+    margin: 2rem auto;
+    max-width: 800px;
+    width: 90%;
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.grid-item-r1 {
+    grid-column: span 12;
+}
+
+section {
+    background-color: yellowgreen;
+}
+
+.grid-item-r2 {
+    grid-column: span 6;
+}
+
+.grid-item-r3 {
+    grid-column: span 4;
+}
+
+.grid-item-r4 {
+    grid-column: span 3;
+}
+
+.grid-item-r5 {
+    grid-column: span 2;
+}
+
+.grid-item-r6 {
+    grid-column: span 1;
+}

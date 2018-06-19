@@ -1,0 +1,21 @@
+﻿
+
+
+.container {
+    display: grid;
+    grid-gap: 15px 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px repeat(2, 200px) 100px;
+    margin: 2rem auto;
+    max-width: 1000px;
+    width: 90%;
+}
+
+
+
+.grid-item-1 {
+    grid-column: 1 / span 2;
+    background-color: red;
+}
+
+

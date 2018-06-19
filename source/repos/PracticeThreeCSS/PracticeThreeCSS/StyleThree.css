@@ -1,0 +1,39 @@
+﻿.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 50px);
+    grid-gap: 15px 15px;
+    text-align:center;
+    color: white;
+    grid-auto-flow:column;
+    margin: 2rem auto;
+    max-width: 1000px;
+    width:90%;
+}
+.grid-item-c1 {
+    grid-row: span 12;
+}
+
+section {
+    background-color: lawngreen
+}
+
+.grid-item-c2 {
+    grid-row: span 6;
+}
+
+.grid-item-c3 {
+    grid-row: span 4;
+}
+
+.grid-item-c4 {
+    grid-row: span 3;
+}
+
+.grid-item-c5 {
+    grid-row: span 2;
+}
+
+.grid-item-c6 {
+    grid-row: span 1;
+}

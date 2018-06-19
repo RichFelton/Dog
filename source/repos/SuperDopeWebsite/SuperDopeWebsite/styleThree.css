@@ -1,0 +1,26 @@
+﻿.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 20rem;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+    padding: 11px;
+    max-width: 1000px;
+}
+
+.flexItem {
+    margin-left: 5px;
+    padding: 11px;
+}
+
+    .flexItem:first-child {
+        margin: 0;
+    }
+.flexItem--4 {
+    order: -1;
+}
+
+.flexItem--2 {
+    align-self: stretch;
+}
